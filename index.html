@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html> 
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+	<title>LeProjetDeFou</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- Menu -->
+<body>
+	<button class="tablink" onclick="demo('Accueil', this, '#FE4241')" id="defaultTab"><i class="fa fa-home"></i>	Accueil</button>
+	<button class="tablink" onclick="demo('Horaire', this, '#00C4B3')"><i class="fa fa-clock-o"></i>	Horaire</button>
+	<button class="tablink" onclick="demo('Traffic', this, '#050D9E')"><i class="fa fa-subway"></i>	Traffic</button>
+	<!-- Page d'Accueil -->
+	<div id="Accueil" class="tabcontent">
+		<h3>Accueil</h3>
+		<div class="card">
+			<img src="img/JS.jpg" alt="Jacky" style="width:25%">
+			<h1>Shang Jacky</h1>
+			<p class="title">Étudiant</p>
+			<p>Lycéen au lycée Victor Hugo</p>
+			<div style="margin: 24px 0;">
+				<a href="https://www.instagram.com/jacky_shg/"><i class="fa fa-instagram"></i></a> 
+				<a href="https://twitter.com/jacky_shg"><i class="fa fa-twitter"></i></a>  
+			</div>
+		</div>	
+		<div class="card">
+			<img src="img/moussa.jpg" alt="Moussa" style="width:25%">
+			<h1>Diakité-Sanokho Moussa</h1>
+			<p class="title">Étudiant</p>
+			<p>Lycéen au lycée Victor Hugo</p>
+			<div style="margin: 24px 0;">
+				<a href="https://instagram.com/moussaa666"><i class="fa fa-instagram"></i></a> 
+				<a href="https://twitter.com/ghost_fighter25"><i class="fa fa-twitter"></i></a>  
+			</div>
+		</div>
+
+		<p>Dans le cadre d'un projet scolaire de NSI (Numérique et Science Informatique), nous avons codés ce site internet, il permet aux utilisateurs d'obtenir les informations de perturbation ainsi que l'arrivée des métros tout cela en temps-réel. Pour cela, nous avons utilisés cette <a style="font-size:15px;"href="https://api-ratp.pierre-grimaud.fr/v4/"> API. </a></p>
+		<div id="content">
+			<div id="bottom">
+				HISTORIQUE DU PROJET <br>
+				08/04/2021 : Rédaction du cahier des charges : disponible  <a style="font-size:17px;"href="../Cahier_Des_Charges.pdf">ici</a>
+			</div>
+		</div>
+	</div>
+	<!-- Page Horaire -->
+	<div id="Horaire" class="tabcontent">
+		<h3>Horaire</h3>
+		<p> Veuillez séléctionner une station afin de connaître l'arrivée du métro à cette station</p>
+		<div style= "padding-bottom:20px; text-align:center" id = schedules>
+			<select id="ligne">
+				<option value="0">Quel ligne ?</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="3b">3b</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="7b">7b</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+			</select>
+			<select id="station">
+				<option value="">Choisissez une ligne</option>
+			</select>
+		</div>
+		<div id="sche">
+			<table>
+				<tr>
+					<th id="s1"></th>
+					<th id="d1"></th>
+					<th id="d2"></th>
+				</tr>
+				<tr>
+					<th>Premier train</th>
+					<td id="d1m1"></td>
+					<td id="d2m1"></td>
+				</tr>
+				<tr>
+					<th>Deuxième train</th>
+					<td id="d1m2"></td>
+					<td id="d2m2"></td>
+				</tr>
+				<tr>
+					<th>Troisième train</th>
+					<td id="d1m3"></td>
+					<td id="d2m3"></td>
+				</tr>
+				<tr>
+					<th>Quatrième train</th>
+					<td id="d1m4"></td>
+					<td id="d2m4"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- Page Traffic -->
+	<div id="Traffic" class="tabcontent">
+		<h3>Traffic</h3>
+		<p> Ci-dessous les preturbations actuelle des différents métros : </p>
+		<table id="tra">
+			<tr>
+				<td><img src="img/metro1.jfif" alt="metro1"><p id="t1"></p></td>
+				<td><img src="img/metro2.jfif" alt="metro2"><p id="t2"></p></td>
+				<td><img src="img/metro3.jfif" alt="metro3"><p id="t3"></p></td>
+				<td><img src="img/metro3b.jfif" alt="metro3b"><p id="t3b"></p></td>
+			</tr>
+			<tr>
+				<td><img src="img/metro4.jfif" alt="metro4"><p id="t4"></p></td>
+				<td><img src="img/metro5.jfif" alt="metro5"><p id="t5"></p></td>
+				<td><img src="img/metro6.jfif" alt="metro6"><p id="t6"></p></td>
+				<td><img src="img/metro7.jfif" alt="metro7"><p id="t7"></p></td>
+			</tr>
+			<tr>
+				<td><img src="img/metro7b.jfif" alt="metro7b"><p id="t7b"></p></td>
+				<td><img src="img/metro8.jfif" alt="metro8"><p id="t8"></p></td>
+				<td><img src="img/metro9.jfif" alt="metro9"><p id="t9"></p></td>
+				<td><img src="img/metro10.jfif" alt="metro10"><p id="t10"></p></td>
+			</tr>
+			<tr>
+				<td><img src="img/metro11.jfif" alt="metro11"><p id="t11"></p></td>
+				<td><img src="img/metro12.jfif" alt="metro12"><p id="t12"></p></td>
+				<td><img src="img/metro13.jfif" alt="metro13"><p id="t13"></p></td>
+				<td><img src="img/metro14.jfif" alt="metro14"><p id="t14"></p></td>
+			</tr>
+		</table>
+	</div>
+</div>
+</div>
+
+</body>
+
+</html>
