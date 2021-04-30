@@ -84,7 +84,7 @@ body, html {
     overflow-y: auto;
 }
 #table div{
-    height: 400px;
+    height: 450px;
     width:auto;
     border:1px solid black;
     overflow-y: auto;
