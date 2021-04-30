@@ -78,7 +78,7 @@ body, html {
   align-items: center;
 }
 #content div{
-    height: 100px;
+    height: auto;
     width:auto;
     border:1px solid black;
     overflow-y: auto;
