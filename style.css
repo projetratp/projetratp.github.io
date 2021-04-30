@@ -78,7 +78,13 @@ body, html {
   align-items: center;
 }
 #content div{
-    height: auto;
+    height: 100px;
+    width:auto;
+    border:1px solid black;
+    overflow-y: auto;
+}
+#table div{
+    height: 400px;
     width:auto;
     border:1px solid black;
     overflow-y: auto;
