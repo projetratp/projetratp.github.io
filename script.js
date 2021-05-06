@@ -12,6 +12,7 @@ function demo(pageName,elmnt,color) {
 	document.getElementById(pageName).style.display = "block";
 	elmnt.style.backgroundColor = color;
 }
+// JS
 
 
 // Horaire
@@ -233,6 +234,7 @@ var callBackGetSuccess = function(data)
 			d1.innerHTML += " /\n" +data.result.schedules[3].destination 
 	}
 }
+//MD
 //Liste des stations de métros
 var stationObject = {
 	"1":  ["La défense", "Esplanade de La Défense ", "Pont de Neuilly","Les Sablons","Porte Maillot","Argentine","Charles de Gaulle — Étoile","George V","Franklin D. Roosevelt","Champs-Élysées — Clemenceau","Concorde","Tuileries","Palais Royal - Musée du Louvre","Louvre — Rivoli","Châtelet","Hôtel de Ville","Saint-Paul","Bastille","Gare de Lyon","Reuilly — Diderot","Nation","Porte de Vincennes","Saint-Mandé","Bérault","Château de Vincennes"],
@@ -252,6 +254,7 @@ var stationObject = {
 	"13": ["Asnières - Gennevilliers - Les Courtilles","Les Agnettes","Gabriel Péri","Mairie de Clichy","Porte de Clichy","Brochant"," Saint-Denis - Université","Basilique de Saint-Denis","Saint-Denis - Porte de Paris","Carrefour Pleyel","Mairie de Saint-Ouen","Garibaldi","Porte de Saint-Ouen","Guy Môquet","La Fourche","Place de Clichy","Liège","Saint-Lazare","Miromesnil","Champs-Elysées - Clemenceau","Invalides","Varenne","Saint-François-Xavier","Duroc","Montparnasse - Bienvenüe","Gaîté","Pernety","Plaisance","Porte de Vanves","Malakoff - Plateau de Vanves","Malakoff - Rue Etienne-Dolet","Châtillon - Montrouge"],
 	"14": ["Mairie de Saint-Ouen","Saint-Ouen","Porte de Clichy ","Pont Cardinet","Saint-Lazare","Madeleine","Pyramides","Châtelet","Gare de Lyon","Bercy","Cour Saint-Émilion","Bibliothèque François Mitterrand","Olympiades"],
 }
+//MD
 // fonction qui appelle l'API
 function getAPI(){
 	var ligneSel = document.getElementById("ligne");
@@ -288,7 +291,7 @@ function getAPI(){
 		});
 	}, 100); //Intervalle ici en ms
 }
-
+//JS
 //Trafic
 var GetSuccess = function(data) {
 	console.log("Api Trafic", data);
@@ -326,7 +329,7 @@ function traffic() {
 		});
 	}, 1000); //Intervalle ici en ms
 }
-
+//JS
 
 
 
@@ -351,3 +354,4 @@ window.onload = function()
 	//if (cur.innerHTML == "Traffic") 
 	traffic();
 }
+//JS
