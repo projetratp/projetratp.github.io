@@ -16,7 +16,7 @@ function demo(pageName,elmnt,color) {
 
 
 // Horaire
-
+// fonction 1 seul direction
 function oneDir(data, size)
 {
 	var bool = true;
@@ -37,7 +37,7 @@ function oneDir(data, size)
 	}
 	return bool;
 }
-
+//réponse horaire
 var callBackGetSuccess = function(data)
 {	
 	console.log("Api horaire", data);
@@ -255,7 +255,7 @@ var stationObject = {
 	"14": ["Mairie de Saint-Ouen","Saint-Ouen","Porte de Clichy ","Pont Cardinet","Saint-Lazare","Madeleine","Pyramides","Châtelet","Gare de Lyon","Bercy","Cour Saint-Émilion","Bibliothèque François Mitterrand","Olympiades"],
 }
 //MD
-// fonction qui appelle l'API
+// fonction qui appelle l'API pour horaire, menu déroulant polyvalent
 function getAPI(){
 	var ligneSel = document.getElementById("ligne");
 	var stationSel = document.getElementById("station");
@@ -313,7 +313,7 @@ var GetSuccess = function(data) {
 	t14.innerHTML = data.result.metros[15].message;
 
 }
-
+// fonction appel api pour traffic
 function traffic() {
 	setInterval(function()
 	{
