@@ -39,8 +39,9 @@
 				<a href="https://twitter.com/ghost_fighter25"><i class="fa fa-twitter"></i></a>  
 			</div>
 		</div>
-
+		<!-- Description -->
 		<p>Dans le cadre d'un projet scolaire de NSI (Numérique et Science Informatique), nous avons codés ce site internet, il permet aux utilisateurs d'obtenir les informations de perturbation ainsi que l'arrivée des métros tout cela en temps-réel. Pour cela, nous avons utilisés cette <a style="font-size:15px;"href="https://api-ratp.pierre-grimaud.fr/v4/"> API. </a></p>
+		<!-- contenu qui a sa propre barre de scroll -->
 		<div id="content">
 			<div id="bottom">
 				HISTORIQUE DU PROJET <br>
@@ -53,6 +54,7 @@
 	<div id="Horaire" class="tabcontent">
 		<h3>Horaire</h3>
 		<p> Veuillez séléctionner une station afin de connaître l'arrivée du métro à cette station</p>
+		<!-- Choix ligne -->
 		<div style= "padding-bottom:20px; text-align:center" id = schedules>
 			<select id="ligne">
 				<option value="0">Quel ligne ?</option>
@@ -73,9 +75,11 @@
 				<option value="13">13</option>
 				<option value="14">14</option>
 			</select>
+			<!-- Choix station -->
 			<select id="station">
 				<option value="">Choisissez une ligne</option>
 			</select>
+		<!-- Tableau réponse -->
 		</div>
 		<div id="sche">
 			<table>
@@ -112,6 +116,7 @@
 	<div id="Traffic" class="tabcontent">
 		<h3>Traffic</h3>
 		<p> Ci-dessous les preturbations actuelle des différents métros : </p>
+		<!-- Tableau traffic -->
 		<div id="table">
 			<div id="traf">
 				<table id="tra">
