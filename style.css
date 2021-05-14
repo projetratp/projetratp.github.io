@@ -51,6 +51,12 @@ body, html {
   font-family: Arial;
   overflow-y: hidden
 }
+body
+{
+  background-image: url('img/fond.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* JS */
 /* menu */
 .tablink {
