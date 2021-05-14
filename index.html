@@ -3,12 +3,12 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <head>
-	<title>LeProjetDeFou</title>
+	<title>RATP S&T</title>
 	<link rel="icon" type="image/png" href="logo.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<!-- Librairie javascript -->	
 	<script src="script.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!-- Librairie css -->
 </head>
 <!-- Menu -->
 <body>
@@ -18,6 +18,7 @@
 	<!-- Page d'Accueil -->
 	<div id="Accueil" class="tabcontent">
 		<h3>Accueil</h3>
+		<!-- carte -->
 		<div class="card">
 			<img src="img/JS.jpg" alt="Jacky" style="width:25%">
 			<h1>Shang Jacky</h1>
@@ -38,19 +39,24 @@
 				<a href="https://twitter.com/ghost_fighter25"><i class="fa fa-twitter"></i></a>  
 			</div>
 		</div>
-
+		<!-- Description -->
 		<p>Dans le cadre d'un projet scolaire de NSI (Numérique et Science Informatique), nous avons codés ce site internet, il permet aux utilisateurs d'obtenir les informations de perturbation ainsi que l'arrivée des métros tout cela en temps-réel. Pour cela, nous avons utilisés cette <a style="font-size:15px;"href="https://api-ratp.pierre-grimaud.fr/v4/"> API. </a></p>
+		<!-- contenu qui a sa propre barre de scroll (https://stackoverflow.com/questions/15453410/independent-column-scroll-in-html-page)-->
 		<div id="content">
 			<div id="bottom">
 				HISTORIQUE DU PROJET <br>
-				08/04/2021 : Rédaction du cahier des charges : disponible  <a style="font-size:17px;"href="Cahier_Des_Charges.pdf">ici</a>
+				06/05/2021 : V 0.2 : Ajout d'un logo + PDF + nom du site provisoire ( Schedules & Traffic ) + dans le code des commentaires pour rendres le code plus compréhensible + tableau traffic indépendant<br>
+				29/04/2021 : V 0.1 : Site fonctionnel malgrès quelque bug <br>
+				08/04/2021 : Rédaction du cahier des charges :<a style="font-size:17px;"href="Cahier_des_Charges.pdf"> disponible ici</a> 
 			</div>
 		</div>
 	</div>
+	<!-- JS -->
 	<!-- Page Horaire -->
 	<div id="Horaire" class="tabcontent">
 		<h3>Horaire</h3>
 		<p> Veuillez séléctionner une station afin de connaître l'arrivée du métro à cette station</p>
+		<!-- Choix ligne -->
 		<div style= "padding-bottom:20px; text-align:center" id = schedules>
 			<select id="ligne">
 				<option value="0">Quel ligne ?</option>
@@ -71,9 +77,11 @@
 				<option value="13">13</option>
 				<option value="14">14</option>
 			</select>
+			<!-- Choix station -->
 			<select id="station">
 				<option value="">Choisissez une ligne</option>
 			</select>
+		<!-- Tableau réponse -->
 		</div>
 		<div id="sche">
 			<table>
@@ -105,40 +113,46 @@
 			</table>
 		</div>
 	</div>
+	<!-- MD -->
 	<!-- Page Traffic -->
 	<div id="Traffic" class="tabcontent">
 		<h3>Traffic</h3>
 		<p> Ci-dessous les preturbations actuelle des différents métros : </p>
-		<table id="tra">
-			<tr>
-				<td><img src="img/metro1.jfif" alt="metro1"><p id="t1"></p></td>
-				<td><img src="img/metro2.jfif" alt="metro2"><p id="t2"></p></td>
-				<td><img src="img/metro3.jfif" alt="metro3"><p id="t3"></p></td>
-				<td><img src="img/metro3b.jfif" alt="metro3b"><p id="t3b"></p></td>
-			</tr>
-			<tr>
-				<td><img src="img/metro4.jfif" alt="metro4"><p id="t4"></p></td>
-				<td><img src="img/metro5.jfif" alt="metro5"><p id="t5"></p></td>
-				<td><img src="img/metro6.jfif" alt="metro6"><p id="t6"></p></td>
-				<td><img src="img/metro7.jfif" alt="metro7"><p id="t7"></p></td>
-			</tr>
-			<tr>
-				<td><img src="img/metro7b.jfif" alt="metro7b"><p id="t7b"></p></td>
-				<td><img src="img/metro8.jfif" alt="metro8"><p id="t8"></p></td>
-				<td><img src="img/metro9.jfif" alt="metro9"><p id="t9"></p></td>
-				<td><img src="img/metro10.jfif" alt="metro10"><p id="t10"></p></td>
-			</tr>
-			<tr>
-				<td><img src="img/metro11.jfif" alt="metro11"><p id="t11"></p></td>
-				<td><img src="img/metro12.jfif" alt="metro12"><p id="t12"></p></td>
-				<td><img src="img/metro13.jfif" alt="metro13"><p id="t13"></p></td>
-				<td><img src="img/metro14.jfif" alt="metro14"><p id="t14"></p></td>
-			</tr>
-		</table>
+		<!-- Tableau traffic -->
+		<div id="table">
+			<div id="traf">
+				<table id="tra">
+					<tr>
+						<td><img src="img/metro1.jfif" alt="metro1"><p id="t1"></p></td>
+						<td><img src="img/metro2.jfif" alt="metro2"><p id="t2"></p></td>
+						<td><img src="img/metro3.jfif" alt="metro3"><p id="t3"></p></td>
+						<td><img src="img/metro3b.jfif" alt="metro3b"><p id="t3b"></p></td>
+					</tr>
+					<tr>
+						<td><img src="img/metro4.jfif" alt="metro4"><p id="t4"></p></td>
+						<td><img src="img/metro5.jfif" alt="metro5"><p id="t5"></p></td>
+						<td><img src="img/metro6.jfif" alt="metro6"><p id="t6"></p></td>
+						<td><img src="img/metro7.jfif" alt="metro7"><p id="t7"></p></td>
+					</tr>
+					<tr>
+						<td><img src="img/metro7b.jfif" alt="metro7b"><p id="t7b"></p></td>
+						<td><img src="img/metro8.jfif" alt="metro8"><p id="t8"></p></td>
+						<td><img src="img/metro9.jfif" alt="metro9"><p id="t9"></p></td>
+						<td><img src="img/metro10.jfif" alt="metro10"><p id="t10"></p></td>
+					</tr>
+					<tr>
+						<td><img src="img/metro11.jfif" alt="metro11"><p id="t11"></p></td>
+						<td><img src="img/metro12.jfif" alt="metro12"><p id="t12"></p></td>
+						<td><img src="img/metro13.jfif" alt="metro13"><p id="t13"></p></td>
+						<td><img src="img/metro14.jfif" alt="metro14"><p id="t14"></p></td>
+					</tr>
+				</table>
+				</div>
+			</div>
 	</div>
 </div>
 </div>
-
+<!-- JS -->
 </body>
 
 </html>
