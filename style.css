@@ -129,7 +129,7 @@ button:hover, a:hover {
 
 
 /* Version mobile */
-@media screen and (min-width: 600px) and (max-width: 900px) {
+/*      @media screen and (min-width: 600px) and (max-width: 900px) {
 	body{background-image:none}
 	#wrapperpub {padding: 5px 10px;margin: 15px;width:auto}
 	#wrapper {margin: 15px;width:auto;}
@@ -166,3 +166,4 @@ button:hover, a:hover {
 	#content .wp-caption img{max-width:260px;width:auto;}
 	#content .dp40 .postthumbimg-ds img{max-width:100px;width:auto;}
 }
+*/
