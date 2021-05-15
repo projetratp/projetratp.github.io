@@ -13,6 +13,7 @@ function demo(pageName,elmnt,color) {
 	elmnt.style.backgroundColor = color;
 }
 // JS
+// 25/04/2021
 
 
 // Horaire
@@ -235,6 +236,7 @@ var callBackGetSuccess = function(data)
 	}
 }
 //MD
+//28/04/2021
 //Liste des stations de métros
 var stationObject = {
 	"1":  ["La défense", "Esplanade de La Défense ", "Pont de Neuilly","Les Sablons","Porte Maillot","Argentine","Charles de Gaulle — Étoile","George V","Franklin D. Roosevelt","Champs-Élysées — Clemenceau","Concorde","Tuileries","Palais Royal - Musée du Louvre","Louvre — Rivoli","Châtelet","Hôtel de Ville","Saint-Paul","Bastille","Gare de Lyon","Reuilly — Diderot","Nation","Porte de Vincennes","Saint-Mandé","Bérault","Château de Vincennes"],
@@ -255,6 +257,7 @@ var stationObject = {
 	"14": ["Mairie de Saint-Ouen","Saint-Ouen","Porte de Clichy ","Pont Cardinet","Saint-Lazare","Madeleine","Pyramides","Châtelet","Gare de Lyon","Bercy","Cour Saint-Émilion","Bibliothèque François Mitterrand","Olympiades"],
 }
 //MD
+// 18/04/2021
 // fonction qui appelle l'API pour horaire, menu déroulant polyvalent
 function getAPI(){
 	var ligneSel = document.getElementById("ligne");
@@ -292,6 +295,7 @@ function getAPI(){
 	}, 100); //Intervalle ici en ms
 }
 //JS
+//18/04/2021
 //Trafic
 var GetSuccess = function(data) {
 	console.log("Api Trafic", data);
@@ -330,15 +334,7 @@ function traffic() {
 	}, 1000); //Intervalle ici en ms
 }
 //JS
-
-
-
-
-
-
-
-
-
+//19/04/2021
 
 
 //fonction éxécuté au démarrage de la page
@@ -355,3 +351,4 @@ window.onload = function()
 	traffic();
 }
 //JS
+//20/04/2021

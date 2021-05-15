@@ -51,13 +51,17 @@ body, html {
   font-family: Arial;
   overflow-y: hidden
 }
-body
+/*19/04/2021*/
+/*body 
 {
   background-image: url('img/fond.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
+Fond d'écran image abandonné
+*/
 /* JS */
+/*14/05/2021*/
 /* menu */
 .tablink {
   background-color: #555;
@@ -82,6 +86,7 @@ body
   align-items: center;
 }
 /* MD */
+/* 26/04/2021 */
 /* zone de text avec barre de scrolling indépendant */
 /* https://stackoverflow.com/questions/15453410/independent-column-scroll-in-html-page */
 #content div{
@@ -97,12 +102,12 @@ body
     overflow-y: auto;
 }
 /* JS */
+/*19/04/2021/
 /* carte */
 .card {
   max-width: 410px;
   margin-left: 5%;
   margin-right: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 40%;
   text-align: center;
   font-family: arial;
@@ -124,3 +129,4 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 /* JS */
+/* 27/04/2021*/
