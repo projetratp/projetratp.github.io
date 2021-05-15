@@ -313,8 +313,8 @@ var GetSuccess = function(data) {
 	t14.innerHTML = data.result.metros[15].message;
 
 }
-// fonction appel api pour traffic
-function traffic() {
+// fonction appel api pour trafic
+function trafic() {
 	setInterval(function()
 	{
 		var url = "https://api-ratp.pierre-grimaud.fr/v4/traffic/metros"
@@ -351,7 +351,7 @@ window.onload = function()
 	for (var i = 0; i < tablinks.length; i++)
 		if (tablinks[i].style.display == "block")
 			cur = tab*/
-	//if (cur.innerHTML == "Traffic") 
-	traffic();
+	//if (cur.innerHTML == "Trafic") 
+	trafic();
 }
 //JS
