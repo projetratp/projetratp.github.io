@@ -60,6 +60,7 @@ body, html {
 Fond d'écran abandonée
 */
 /* JS */
+/*10/04/2021*/
 /* menu */
 .tablink {
   background-color: #555;
@@ -84,6 +85,7 @@ Fond d'écran abandonée
   align-items: center;
 }
 /* MD */
+/* 15/04/2021 */
 /* zone de text avec barre de scrolling indépendant */
 /* https://stackoverflow.com/questions/15453410/independent-column-scroll-in-html-page */
 #content div{
@@ -99,6 +101,7 @@ Fond d'écran abandonée
     overflow-y: auto;
 }
 /* JS */
+/*19/04/2021/
 /* carte */
 .card {
   max-width: 410px;
@@ -125,6 +128,7 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 /* JS */
+/* 20/04/2021*/
 
 
 
@@ -167,3 +171,4 @@ button:hover, a:hover {
 	#content .dp40 .postthumbimg-ds img{max-width:100px;width:auto;}
 }
 */
+/*30/04/2021*/
