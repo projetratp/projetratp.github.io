@@ -125,3 +125,44 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 /* JS */
+
+
+
+/* Version mobile */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	body{background-image:none}
+	#wrapperpub {padding: 5px 10px;margin: 15px;width:auto}
+	#wrapper {margin: 15px;width:auto;}
+	#header{margin:0 auto;width:auto;}
+	#container{width:auto;margin:0 0 0 0;-moz-border-radius-topleft:6px;border-top-left-radius:6px;-moz-border-radius-topright:6px;border-top-right-radius:6px;-moz-border-radius-bottomleft:6px;border-bottom-left-radius:6px;-moz-border-radius-bottomright:6px;border-bottom-right-radius:6px;}
+	#headertop,#access,.adsensehaut,#footer,.wp-pagenavi,.mobileoff,.sidebar,.blogtitle,.description{display:none}
+	.mobileon{width:auto;}
+	.navigation_mobile{display:inline}
+	#logo img{height:auto;max-width:500px;width:auto;}
+	#logo {margin:0 0 0 -1em}
+	#content img{height:auto;max-width:500px;width:auto;margin:0;}
+	#content .attachment img{height:auto;max-width:500px;width:auto;margin:0;}
+	#content .attachment-thumbnail {height:auto;max-width:90px;width:auto;margin:0;}
+	#content .wp-caption{max-width:500px;width:auto;}
+	#content .wp-caption img{max-width:480px;width:auto;}
+	#content .dp40 .postthumbimg-ds img{max-width:150px;width:auto;}
+}
+
+@media screen and (max-width: 600px),screen and (max-device-width: 480px) {
+	body{background-image:none}
+	#wrapperpub {padding: 5px 10px;margin: 15px;width:auto}
+	#wrapper {margin: 15px;width:auto;}
+	#header{margin:0 auto;width:auto;}
+	#container{width:auto;margin:0 0 0 0;-moz-border-radius-topleft:6px;border-top-left-radius:6px;-moz-border-radius-topright:6px;border-top-right-radius:6px;-moz-border-radius-bottomleft:6px;border-bottom-left-radius:6px;-moz-border-radius-bottomright:6px;border-bottom-right-radius:6px;}
+	#headertop,#access,.adsensehaut,#footer,.wp-pagenavi,.mobileoff,.sidebar,.blogtitle,.description{display:none}
+	.mobileon{width:auto;}
+	.navigation_mobile{display:inline}
+	#logo img{height:auto;max-width:300px;width:auto;}
+	#logo {margin:0 0 0 -1em}
+	#content img{height:auto;max-width:280px;width:auto;margin:0;}
+	#content .attachment img{height:auto;max-width:280px;width:auto;margin:0;}
+	#content .attachment-thumbnail {height:auto;max-width:50px;width:auto;margin:0;}
+	#content .wp-caption{max-width:280px;width:auto;}
+	#content .wp-caption img{max-width:260px;width:auto;}
+	#content .dp40 .postthumbimg-ds img{max-width:100px;width:auto;}
+}
