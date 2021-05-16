@@ -258,7 +258,7 @@ var stationObject = {
 }
 //MD
 // 18/04/2021
-// fonction qui appelle l'API pour horaire, menu déroulant polyvalent
+// fonction qui appelle l'API pour horaire tout les x millisecondes, menu déroulant polyvalent
 function getAPI(){
 	var ligneSel = document.getElementById("ligne");
 	var stationSel = document.getElementById("station");
@@ -292,7 +292,7 @@ function getAPI(){
 		.always(function() {
 			//alert( "finished" );
 		});
-	}, 100); //Intervalle ici en ms
+	}, 100); //Intervalle ici 100 ms
 }
 //JS
 //18/04/2021
@@ -317,7 +317,7 @@ var GetSuccess = function(data) {
 	t14.innerHTML = data.result.metros[15].message;
 
 }
-// fonction appel api pour traffic
+// fonction appel api pour traffic tout les x millisecondes
 function traffic() {
 	setInterval(function()
 	{
@@ -331,7 +331,7 @@ function traffic() {
 		.always(function() {
 			//alert( "finished" );
 		});
-	}, 1000); //Intervalle ici en ms
+	}, 1000); //Intervalle ici 1000 ms soit 1 seconde
 }
 //JS
 //19/04/2021
