@@ -115,6 +115,10 @@ Fond d'écran image abandonné
   float : left ;
 
 }
+.title {
+  color: grey;
+  font-size: 18px;
+}
 
 a {
   text-decoration: none;
