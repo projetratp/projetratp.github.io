@@ -75,8 +75,7 @@ Fond d'écran image abandonné
   width: 33.3333333333333333333333333333333333333333333%;
 }
 
-.tab
-{
+.tabcontent {
   color: black;
   display: none;
   padding: 100px 20px;
