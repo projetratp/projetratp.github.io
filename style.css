@@ -80,7 +80,7 @@ Fond d'écran image abandonné
   display: none;
   padding: 100px 20px;
   height: 100%;
-  width: 80%;
+  width: 90%;
   margin-left: 10%;
   margin-right: 10%;
   align-items: center;
@@ -90,7 +90,7 @@ Fond d'écran image abandonné
 /* zone de text avec barre de scrolling indépendant */
 /* https://stackoverflow.com/questions/15453410/independent-column-scroll-in-html-page */
 #content div{
-    height: auto;
+    height: 100px;
     width:auto;
     border:1px solid black;
     overflow-y: auto;
